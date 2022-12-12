@@ -1,0 +1,43 @@
+<!--Video02_Mejorando el mantenimiento de código-->
+<meta charset="UTF-8">
+<script>
+
+	function saltarLinea(){//<!--Así se declara una funcion que no recibe parametros y no retorna nada-->
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function imprimir(texto){
+
+		document.write(texto);
+		saltarLinea();
+	}
+
+	var anho = 2020;<!--Así se declara una variable, con "var"-->
+	var saltoLinea = "<br><br><br><br>";
+	document.write("Juan tiene: " + (anho-2000) + " años");
+	document.write(saltoLinea);
+	document.write("Pedro tiene: " + (anho-1995) + " años");
+	document.write(saltoLinea);
+	document.write("Carlos tiene: " + (anho-2005) + " años");
+	document.write(saltoLinea);
+	document.write(saltoLinea);
+	
+	document.write("Juan tiene: " + (anho-2000) + " años");
+	saltarLinea();
+	document.write("Pedro tiene: " + (anho-1995) + " años");
+	saltarLinea();
+	document.write("Carlos tiene: " + (anho-2005) + " años");
+	saltarLinea();
+
+	//Funciones con parametro _ VIDEO 05
+	imprimir("hola!!!");//Así se manda atributos a una funcion que recibe parametros 
+	saltarLinea();
+	//Estas instrucciones ejecuta el calculo de edades mediante una variable y un valor fijo 
+	imprimir("Juan tiene: " + (anho-2000) + " años");
+	imprimir("Pedro tiene: " + (anho-1995) + " años");
+	imprimir("Carlos tiene: " + (anho-2005) + " años");
+</script>

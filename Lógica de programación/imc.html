@@ -1,0 +1,75 @@
+<meta charset="UTF-8">
+<h1> Calcular IMC </h1>
+<script>
+
+	function saltarLinea(){//<!--Así se declara una funcion que no recibe parametros y no retorna nada-->
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function imprimir(texto){
+
+		document.write(texto);
+		saltarLinea();
+	}
+
+	function IMC(peso, altura, nombre){
+		var IMC = peso/(altura*altura)
+		imprimir("El IMC de " + nombre + " es de: " + IMC);
+		return IMC; //Esta es la forma en la que podemos retornar un valor desde una función
+	}
+
+	function promedioIMC(peso1,altura1,nombre1,peso2,altura2,nombre2){
+		imprimir("El promedio de IMC de "+nombre1+" y "+nombre2+" es de: "+(IMC(peso1,altura1,nombre1)+IMC(peso2,altura2,nombre2))/2);
+	}
+
+	function calcularIMC(peso, altura){
+		var imc = peso /(altura*altura);
+		return imc
+	}
+
+	var pesoChristian = 71;
+	var alturaChristian = 1.72;
+	var imcChristian = pesoChristian/(alturaChristian*alturaChristian);
+	imprimir("El IMC de Christian es de: " + imcChristian);
+
+	var pesoFelipe = 75;
+	var alturaFelipe = 1.73;
+	var imcFelipe = pesoFelipe/(alturaFelipe*alturaFelipe);
+	imprimir("El IMC de Christian es de: " + imcFelipe);
+
+	IMC(71,1.72,"Christian");//Optimizamos en lineas de codigo, que las anteriores
+	IMC(71,1.72,"Felipe");
+	promedioIMC(71,1.72,"Christian", 71,1.72,"Felipe");
+
+	imprimir("El promedio de imc calculado de Gabriela y Luisa es: " + (calcularIMC(65,1.68)+calcularIMC(55,1.60))/2);
+
+	var pesoInformado = 71;
+	var alturaInformado = 1.72;
+
+	imcCalculado = calcularIMC(pesoInformado,alturaInformado);
+	imprimir("El IMC es calculado es: " + imcCalculado);
+
+	var nombreInformado = prompt("Informe su nombre: ");
+	pesoInformado = prompt(nombreInformado+" Informe su peso: ")//PROMPT, esta funcion sirve para capturar datos desde el navegador
+	alturaInformado = prompt(nombreInformado+"Informe su altura: ")//PROMPT, esta funcion sirve para capturar datos desde el navegador
+	imcCalculado = calcularIMC(pesoInformado,alturaInformado);//PROMPT, esta funcion sirve para capturar datos desde el navegador
+	imprimir(nombreInformado+" su IMC es calculado es: " + imcCalculado);
+
+	if(imcCalculado < 18.5){
+		imprimir("Abajo de lo recomendado");
+	}
+	if(imcCalculado >= 18.5 && imcCalculado <24.9){
+		imprimir("IMC está dentro del intervalo normal");
+	}
+	if(imcCalculado >= 24.9 && imcCalculado<30){
+		imprimir("IMC considerado sobrepeso");
+	}
+	if(imcCalculado >= 30){
+		imprimir("IMC considerado como obesidad");
+	}
+
+</script>

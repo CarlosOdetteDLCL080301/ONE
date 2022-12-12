@@ -1,0 +1,142 @@
+<!--VIDEO 04_Concatenando caracters-->
+<meta charset="UTF-8">
+
+estoy defininiendo la edad de Christian	
+<!--A continuacion esta mal y posteriormente se escribira una solucion mejor-->
+<script>
+	alert("La edad de Christian es ...");
+	alert("?");
+</script>
+<!--Así deberíamos de realizar la llamada anterior-->
+<script>
+	document.write("La edad de Christian es...<br>");
+	document.write("25"+"8<br>");<!--concateno ambos textos-->
+</script>
+
+<!--VIDEO 06_Operaciones con textos y numeros-->
+<script>
+	document.write("El promedio de edad de Juan, Pedro y Carlos es...");
+	document.write("<br>");
+	document.write((20+25+15)/3);<!--Así realizamos una operacion algebraica, como un promedio en este ejemplo-->
+</script>
+
+
+<script>
+	document.write("La suma de las edades de Juan, Pedro y Carlos es..."+(20+25+15));
+</script>
+
+
+<script>
+	document.write("La suma de las edades de Juan, Pedro y Carlos es..."+(20+25+15));
+	document.write("<br>");
+	document.write((20+25+15));
+</script>
+
+<script>
+	document.write("Juan nacio en el año...");
+	document.write(2020-20);
+	document.write("<br>");
+
+	document.write("Pedro nacio en el año...");
+	document.write("<br>");
+	document.write(2020-25);
+	document.write("<br>");
+
+	document.write("Carlos nacio en el año...");
+	document.write("<br>");
+	document.write(2020-15);
+	document.write("<br>");
+</script>
+
+<!--Ejercicio apartado 08-->
+<meta charset="UTF-8">
+<script>
+    document.write("Estoy escribiendo desde el mundo JavaScript en el mundo HTML");
+</script>
+
+
+<!--VIDEO 02_Reduciendo alteraciones-->
+<script>
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Juan tiene: " + (2022-2000) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Pedro tiene: " + (2022-1995) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Carlos tiene: " + (2022-2005) + "años");
+	document.write("<br>");
+	document.write("<br>");
+</script>
+
+<h1> PROGRAMA </h1>
+<br>
+
+<script>
+
+	var anho = 2020;<!--Así se declara una variable, con "var"-->
+
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Juan tiene: " + (anho-2000) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Pedro tiene: " + (anho-1995) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Carlos tiene: " + (anho-2005) + "años");
+	document.write("<br>");
+	document.write("<br>");
+
+	anho = 2030; <!--Así se le cambia el valor a una variable, sin marcar un "var"-->
+
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Juan tiene: " + (anho-2000) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Pedro tiene: " + (anho-1995) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Carlos tiene: " + (anho-2005) + "años");
+	document.write("<br>");
+	document.write("<br>");
+
+	anho = 2020; <!--Así se le cambia el valor a una variable, sin marcar un "var"-->
+
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Jimena tiene: " + (anho-2010) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Paola tiene: " + (anho-1995) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Laura tiene: " + (anho-2005) + "años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("El promedio de las edades de las 3 mujeres es: " + (10+25+15)/3);
+	document.write("<br>");
+	document.write("<br>");
+
+	var promedio = (10+25+15)/3
+	document.write("El promedio de las edades de las 3 mujeres es: " + Math.round(promedio));<!--Math.round() tiene como objetivo realizar un rendondeo-->
+	document.write("<br>");
+	document.write("<br>");	
+
+	var edadJimena = 10;
+	var edadPaola = 25;
+	var edadLaura = 15;
+
+	promedio = (edadLaura+edadPaola+edadJimena)/3
+	var nom1 = "Jimenena";
+	var nom2 = "Paola";
+	var nom3 = "Laura"
+
+	document.write("El promedio de las edades de: "+nom1+", "+nom2+", "+nom3+" es de "+Math.round(promedio));<!--Math.round() tiene como objetivo realizar un rendondeo-->
+	document.write("<br>");
+	document.write("<br>");	
+
+
+</script>
