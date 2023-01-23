@@ -1,0 +1,37 @@
+<canvas width="600" height="400"><!-- se puede utilizar para dibujar gráficos a través de secuencias de comandos (por lo general JavaScript ). Por ejemplo, puede usarse para dibujar gráficos, hacer composiciones de fotos o incluso realizar animaciones.  -->
+
+<!-- En la declaracion de canvas, definimos el ancho y el alto, en el que queremos que nuestro programa compile -->
+
+</canvas>
+
+<script>
+	function dibujarCuadrado(eje_X,eje_y,color){
+		pincel.fillStyle = color; //Propiedad
+		pincel.fillRect(eje_X,eje_y,50,50);	/*Usamos el pincel para rellenar con un rectangulo*/ /*Usa la funcion fillRect la siguiente estructura *.fillRect(PuntoInicioEn_X, PuntoInicioEn_Y, elRecorridoQueHaráEn_X,elRecorridoQueHaráEn_Y)*/
+		pincel.strokeStyle = "black"; //Es una propiedad del objeto CanvasRenderingContext2D en HTML5 que establece el color o patrón de la línea dibujada en el canvas. Puede ser establecido con una cadena de color en formato CSS o con un objeto de patrón de gradiente.
+		pincel.strokeRect(eje_X,eje_y,50,50);//es un método del objeto CanvasRenderingContext2D que dibuja un rectángulo con bordes en el canvas. Los parámetros x e y especifican las coordenadas del punto superior izquierdo del rectángulo, mientras que width y height especifican las dimensiones del rectángulo. El color de la línea del rectángulo se establece con la propiedad strokeStyle.
+	}
+
+	var pantalla = document.querySelector("canvas"); //Definimos una cariable que usa un método en JavaScript que te permite seleccionar elementos de una página web a través de un selector CSS.
+	/*
+		La primera línea del script está seleccionando un elemento con la etiqueta "canvas" en la página web y almacenándolo en una variable llamada "pantalla". Un elemento canvas es un área en una página web donde se puede dibujar y manipular gráficos en 2D o 3D mediante JavaScript.
+	*/
+	var pincel = pantalla.getContext("2d");
+	/*
+		La segunda línea del script está utilizando el método getContext() en el elemento seleccionado "pantalla" para obtener el contexto de dibujo 2D. El contexto de dibujo es lo que permite dibujar en el canvas, y "2d" es el tipo de contexto que se está obteniendo. El valor "2d" permite dibujar formas básicas como líneas, rectángulos, círculos, etc.
+	*/
+	/*
+	var x = 50
+	while(x < 600){
+		dibujarCuadrado(x,0,"red");
+		dibujarCuadrado(x,50,"yellow");
+		dibujarCuadrado(x,100,"green");
+		x += 50;
+	}
+	*/
+	for(var x = 0; x < 600; x+=50){
+		dibujarCuadrado(x,0,"red");
+		dibujarCuadrado(x,50,"yellow");
+		dibujarCuadrado(x,100,"green");
+	}
+</script>

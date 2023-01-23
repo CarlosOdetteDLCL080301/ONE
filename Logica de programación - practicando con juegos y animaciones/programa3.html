@@ -1,0 +1,45 @@
+<canvas width="600" height="400"><!-- se puede utilizar para dibujar gráficos a través de secuencias de comandos (por lo general JavaScript ). Por ejemplo, puede usarse para dibujar gráficos, hacer composiciones de fotos o incluso realizar animaciones.  -->
+
+<!-- En la declaracion de canvas, definimos el ancho y el alto, en el que queremos que nuestro programa compile -->
+
+</canvas>
+
+<script>
+	
+
+	var pantalla = document.querySelector("canvas"); //Definimos una cariable que usa un método en JavaScript que te permite seleccionar elementos de una página web a través de un selector CSS.
+	/*
+		La primera línea del script está seleccionando un elemento con la etiqueta "canvas" en la página web y almacenándolo en una variable llamada "pantalla". Un elemento canvas es un área en una página web donde se puede dibujar y manipular gráficos en 2D o 3D mediante JavaScript.
+	*/
+	var pincel = pantalla.getContext("2d");
+	/*
+		La segunda línea del script está utilizando el método getContext() en el elemento seleccionado "pantalla" para obtener el contexto de dibujo 2D. El contexto de dibujo es lo que permite dibujar en el canvas, y "2d" es el tipo de contexto que se está obteniendo. El valor "2d" permite dibujar formas básicas como líneas, rectángulos, círculos, etc.
+	*/
+	
+	pincel.fillStyle = "lightgrey"; //Propiedad
+	pincel.fillRect(0,0,600,400);	/*Usamos el pincel para rellenar con un rectangulo*/ /*Usa la funcion fillRect la siguiente estructura *.fillRect(PuntoInicioEn_X, PuntoInicioEn_Y, elRecorridoQueHaráEn_X,elRecorridoQueHaráEn_Y)*/
+
+	function exibirAlerta(evento){//recibe un evento, el cual nos lo entrega el mismo sistema
+		var x = evento.pageX - pantalla.offsetLeft;//Se resta la posicion del click (en el canva) menos el sobreante a la izquierda de la pantalla
+		var y = evento.pageY- pantalla.offsetTop;//Se resta la posicion del click (en el canva) menos el sobreante arriba  de la pantalla
+		console.log(evento)//mandamos a visualizar el evento, en este caso se nos entrega todas las caracteristicas de ese evento, ejemplo su posicion del click
+		//alert("usted hizo un clic");
+		alert(x+","+y)
+	}
+	
+	function dibujarCirculo(evento){//recibe un evento, el cual nos lo entrega el mismo sistema
+		var x = evento.pageX - pantalla.offsetLeft;//Se resta la posicion del click (en el canva) menos el sobreante a la izquierda de la pantalla
+		var y = evento.pageY- pantalla.offsetTop;//Se resta la posicion del click (en el canva) menos el sobreante arriba  de la pantalla
+		pincel.fillStyle = "blue"
+		pincel.beginPath();
+		pincel.arc(x,y,10,0,2*3.14);
+		pincel.fill();
+		console.log(x+","+y)
+	}
+
+	//pantalla.onclick = exibirAlerta; //Se llama la función así para cada vez que se use, mande a llamar a la funcion respectiva, si lo definiera así "pantalla.onclick = exibirAlerta();", ejecutaria a la función al momento de ejecutarse	
+	pantalla.onclick = dibujarCirculo; //Se llama la función así para cada vez que se use, mande a llamar a la funcion respectiva, si lo definiera así "pantalla.onclick = dibujarCirculo();", ejecutaria a la función al momento de ejecutarse	
+	/*
+		"onclick" es un evento en JavaScript que se activa cuando el usuario hace clic en un elemento de la página, como un botón, un enlace o una imagen. Puedes asignar una función a ejecutar cuando se active el evento onclick, mediante el atributo "onclick" del elemento HTML o mediante JavaScript.
+	*/
+</script>

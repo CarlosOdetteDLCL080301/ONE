@@ -1,0 +1,17 @@
+<canvas width="600" height="400"> </canvas>
+<script>
+    function dibujarRectangulo(x,y,color,altura){
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = color;
+        pincel.fillRect(x,y,50,altura); 
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x,y,50,altura);
+    }
+    dibujarRectangulo(50,50,"green",Math.round(Math.random()*50));
+    /*
+        La función Math.random() genera un número aleatorio entre 0 y 1. Multiplicando ese número por 50 se obtiene un número aleatorio entre 0 y 50. Finalmente, la función Math.round() redondea ese número a un entero.
+    */
+
+
+</script> 

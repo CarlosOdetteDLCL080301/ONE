@@ -1,0 +1,48 @@
+<canvas width="600" height="400"><!-- se puede utilizar para dibujar gráficos a través de secuencias de comandos (por lo general JavaScript ). Por ejemplo, puede usarse para dibujar gráficos, hacer composiciones de fotos o incluso realizar animaciones.  -->
+
+<!-- En la declaracion de canvas, definimos el ancho y el alto, en el que queremos que nuestro programa compile -->
+
+</canvas>
+
+<script>
+	
+
+	var pantalla = document.querySelector("canvas"); //Definimos una cariable que usa un método en JavaScript que te permite seleccionar elementos de una página web a través de un selector CSS.
+	/*
+		La primera línea del script está seleccionando un elemento con la etiqueta "canvas" en la página web y almacenándolo en una variable llamada "pantalla". Un elemento canvas es un área en una página web donde se puede dibujar y manipular gráficos en 2D o 3D mediante JavaScript.
+	*/
+	var pincel = pantalla.getContext("2d");
+	/*
+		La segunda línea del script está utilizando el método getContext() en el elemento seleccionado "pantalla" para obtener el contexto de dibujo 2D. El contexto de dibujo es lo que permite dibujar en el canvas, y "2d" es el tipo de contexto que se está obteniendo. El valor "2d" permite dibujar formas básicas como líneas, rectángulos, círculos, etc.
+	*/
+	
+	pincel.fillStyle = "lightgrey"; //Propiedad
+	pincel.fillRect(0,0,600,400);	/*Usamos el pincel para rellenar con un rectangulo*/ /*Usa la funcion fillRect la siguiente estructura *.fillRect(PuntoInicioEn_X, PuntoInicioEn_Y, elRecorridoQueHaráEn_X,elRecorridoQueHaráEn_Y)*/
+	
+	function disenarCircunferencia(x,y,radio){
+		pincel.fillStyle = "blue";
+		pincel.beginPath();
+		pincel.arc(x, y, radio,0, 2*Math.PI);
+		pincel.fill();
+	}
+
+	function limpiarPantalla(){
+		pincel.clearRect(0,0,600,400);//Lo que hace "clearRect", es eliminar el objeto creado 
+		/*
+			"clearRect()"" es un método en el canvas de JavaScript que se utiliza para limpiar un área rectangular específica en el canvas. El método toma cuatro argumentos, que representan las coordenadas x e y de la esquina superior izquierda del rectángulo y el ancho y alto del rectángulo. El método borra todo lo que se encuentra dentro de este rectángulo, rellenando el área con el color transparente.
+		*/
+	}
+
+	var x = 0;
+	function actualizarPantalla(){
+		
+		limpiarPantalla();
+		disenarCircunferencia(x,20,10);
+		x++;
+	}
+	setInterval(actualizarPantalla,11.11111);//Lo que hace es actualizar la pantalla cada intervalo de tiempo, ejecutando una instrucción, en este caso, cada 50 milesimas de segundo, ejecutamos la funcion "actualizarPantalla"
+	/*
+		"setInterval()" es una función en JavaScript que se utiliza para ejecutar una función o un bloque de código de forma recurrente cada cierto tiempo (en milisegundos).La función toma dos argumentos: la función o el código a ejecutar y el tiempo en milisegundos en el que se debe ejecutar la función
+	*/
+
+</script>

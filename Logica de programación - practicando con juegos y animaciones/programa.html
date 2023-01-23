@@ -1,0 +1,40 @@
+<canvas width="600" height="400"><!-- se puede utilizar para dibujar gráficos a través de secuencias de comandos (por lo general JavaScript ). Por ejemplo, puede usarse para dibujar gráficos, hacer composiciones de fotos o incluso realizar animaciones.  -->
+
+<!-- En la declaracion de canvas, definimos el ancho y el alto, en el que queremos que nuestro programa compile -->
+
+</canvas>
+
+<script>
+	
+
+	var pantalla = document.querySelector("canvas"); //Definimos una cariable que usa un método en JavaScript que te permite seleccionar elementos de una página web a través de un selector CSS.
+	/*
+		La primera línea del script está seleccionando un elemento con la etiqueta "canvas" en la página web y almacenándolo en una variable llamada "pantalla". Un elemento canvas es un área en una página web donde se puede dibujar y manipular gráficos en 2D o 3D mediante JavaScript.
+	*/
+	var pincel = pantalla.getContext("2d");
+	/*
+		La segunda línea del script está utilizando el método getContext() en el elemento seleccionado "pantalla" para obtener el contexto de dibujo 2D. El contexto de dibujo es lo que permite dibujar en el canvas, y "2d" es el tipo de contexto que se está obteniendo. El valor "2d" permite dibujar formas básicas como líneas, rectángulos, círculos, etc.
+	*/
+	
+	pincel.fillStyle = "lightgrey"; //Propiedad
+	pincel.fillRect(0,0,600,400);	/*Usamos el pincel para rellenar con un rectangulo*/ /*Usa la funcion fillRect la siguiente estructura *.fillRect(PuntoInicioEn_X, PuntoInicioEn_Y, elRecorridoQueHaráEn_X,elRecorridoQueHaráEn_Y)*/
+	
+	pincel.fillStyle = "green"; //Propiedad
+	pincel.fillRect(0,0,200,400)	/*Usamos el pincel para rellenar con un rectangulo*/ /*Usa la funcion fillRect la siguiente estructura *.fillRect(PuntoInicioEn_X, PuntoInicioEn_Y, elRecorridoQueHaráEn_X,elRecorridoQueHaráEn_Y)*/
+	
+	pincel.fillStyle = "red"; //Propiedad
+	pincel.fillRect(400,0,200,400);	/*Usamos el pincel para rellenar con un rectangulo*/ /*Usa la funcion fillRect la siguiente estructura *.fillRect(PuntoInicioEn_X, PuntoInicioEn_Y, elRecorridoQueHaráEn_X,elRecorridoQueHaráEn_Y)*/
+
+	pincel.fillStyle = "yellow";//Definimos el color a utilizar
+	pincel.beginPath();//Comienza a moverse en el canva
+	pincel.moveTo(300,200);//moverte A //la estructura que maneja es *.moveTo(ejecX,ejeY);
+	pincel.lineTo(200,400);//Dibuja una linea recta // La estructura que maneja *.lineTo(ejeX,ejeY)
+	pincel.lineTo(400,400);//Dibuja una linea recta // La estructura que maneja *.lineTo(ejeX,ejeY)
+	pincel.fill();//Funciona para relleenar lo previamente diseñado
+
+	pincel.fillStyle = "blue"; //Definimos el color a utilizar
+	pincel.beginPath();//Comienza a moverse en el canvas
+	pincel.arc(300,200,50,0,2*3.14);//Posiciona el lugar en el que se encontrara la circunferencia //La estructura que maneja es *.arc(posicionX,posicionY,tamañoDelCirculo,AnguloInicial [radianes],AnguloFinal [radianes])
+	pincel.fill();//Funciona para rellenar el color a utilizar	
+
+</script>
