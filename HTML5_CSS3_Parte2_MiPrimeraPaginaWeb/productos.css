@@ -1,0 +1,98 @@
+/*
+¿Que es padding?
+El padding es el espacio vacío dentro de un elemento HTML que se encuentra entre el contenido del elemento y su borde. Se utiliza para crear espacios entre el contenido y los bordes de un elemento y para separar el contenido de otros elementos en la página.
+En CSS, se puede utilizar la propiedad "padding" para establecer la cantidad de espacio que se debe dejar alrededor de un elemento. El padding se puede establecer para cada lado del elemento (superior, derecho, inferior, izquierdo) o para todos los lados a la vez. El padding se mide en unidades como pixels (px), ems o porcentajes (%).
+*/
+header{
+    background-color: #BBBBBB;/*establece el color de fondo del elemento <header> en gris medio.*/
+    padding: 20px 0;/*establece un padding de 20px para el padding superior e inferior y 0px para el padding izquierdo y derecho.*/
+}
+
+.caja{
+    width: 940px;/*establece el ancho del elemento en 940px.*/
+    position: relative;/*establece la posición relativa del elemento, lo que permite utilizar las propiedades top, right, bottom y left para ajustar su posición.*/
+    margin: 0 auto;/*establece un margen de 0px para el margen superior e inferior y de auto para el margen izquierdo y derecho.*/
+}
+
+nav{
+    position: absolute;/*establece la posición absoluta del elemento <nav>. Con esto se indica que el elemento se posicionará con respecto al primer elemento ancestro con posición relativa o absoluta.*/
+    top: 110px;/*establece la distancia desde el borde superior del elemento <nav> hasta el borde superior del primer elemento ancestro con posición relativa o absoluta.*/
+    right: 0;/*; establece la distancia desde el borde derecho del elemento <nav> hasta el borde derecho del primer elemento ancestro con posición relativa o absoluta.*/
+}
+
+nav li{/*Esta es una regla de estilo CSS que se aplica a los elementos <li> dentro de una etiqueta <nav>.*/
+    display: inline;/*establece que los elementos <li> se comporten como elementos de línea, es decir, se colocan en línea uno después de otro, y no ocupan todo el ancho disponible.*/
+    margin: 0 0 0 15px;/*establece un margen de 0px para el margen superior e inferior y de 0px para el margen izquierdo y derecho, y un margen de 15px para el margen derecho.*/
+}
+
+nav a{/*Eso es una regla de estilo CSS que se aplica a los elementos <a> dentro de una etiqueta <nav>.*/
+    text-transform: uppercase;/*convierte el texto de los enlaces a mayúsculas.*/
+    color:#000000;/*establece el color del texto de los enlaces en negro.*/
+    font-weight: bold;/*hace que el texto de los enlaces sea en negrita.*/
+    font-size: 22px;/*establece el tamaño del texto de los enlaces en 22 píxeles.*/
+    text-decoration:none;/*quita el subrayado debajo del texto de los enlaces.*/
+}
+
+nav a:hover{/*Sirve para realizar una "acción" al pasar encima del objeto con el cursor, en este caso en la parte del menu*//*Esta es una regla de estilo CSS que se aplica a los elementos <a> dentro de un elemento <nav> cuando el cursor del mouse se posiciona sobre ellos.*/
+    color:#c78c19;/*establece que el color del texto dentro de los elementos <a> cambie a #c78c19 (color marrón oscuro) cuando el cursor del mouse se posiciona sobre ellos.*/
+    text-decoration: underline;/*establece que se agregue un subrayado debajo del texto dentro de los elementos <a> cuando el cursor del mouse se posiciona sobre ellos.*/
+}
+
+.productos{
+    width: 940px;/* establece el ancho del elemento en 940px*/
+    margin: 0 auto;/*establece un margen de 0px para el margen superior e inferior y de auto para el margen izquierdo y derecho.*/
+    padding: 50px;/*establece un padding de 50px para el padding superior, inferior, izquierdo y derecho.*/
+
+}
+
+.productos li{
+    display: inline-block;/*establece que los elementos <li> se comporten como elementos de bloque, es decir, ocupan todo el ancho disponible, pero se colocan en línea uno después de otro.*/
+    text-align: center;/*alinea el texto dentro de los elementos <li> al centro.*/
+    width: 30%;/*establece el ancho del elemento <li> en un 30% del ancho del elemento padre.*/
+    vertical-align: top;/* alinea los elementos <li> en la parte superior del elemento padre.*/
+    margin: 0 1.5%;/*establece un margen de 0px para el margen superior e inferior, 1.5% para el margen izquierdo y derecho.*/
+    padding: 30px 20px;/*establece un padding de 30px para el padding superior e inferior y 20px para el padding izquierdo y derecho.*/
+    box-sizing: border-box;/* incluye el padding y el borde dentro del tamaño total del elemento.*/
+    border:2px solid #000000;/*establece un borde de 2 píxeles de ancho y color negro para los elementos <li>.*/
+    border-radius: 10px 10px 10px 10px;/*le da un radio de 10px a las esquinas de los elementos <li>*/
+}
+
+.productos li:hover{/*Esta es una regla de estilo CSS que se aplica a los elementos <li> dentro de cualquier elemento con la clase "productos" cuando el cursor del mouse se posiciona sobre ellos.*/
+    border-color: #c78c19;/*establece que el color del borde de los elementos <li> cambie a #c78c19 (color marrón oscuro) cuando el cursor del mouse se posiciona sobre ellos.*/
+    font-size: 33px;/*establece que el tamaño de la fuente dentro de los elementos <li> cambie a 33px cuando el cursor del mouse se posiciona sobre ellos.*/
+}
+
+.productos li:active{/*Esta es una regla de estilo CSS que se aplica a los elementos <li> dentro de cualquier elemento con la clase "productos" cuando el elemento esta siendo presionado o "active".*/
+    border-color:  #088c19;/*establece que el color del borde de los elementos <li> cambie a #088c19 (color verde oscuro) cuando el elemento es presionado o esta siendo activado.*/
+}
+
+.productos h2{
+    font-size: 30px;/*establece que el tamaño de la fuente dentro de los elementos <h2> sea de 30px.*/
+    font-weight: bold;/*establece que la fuente dentro de los elementos <h2> sea en negrita.*/
+}
+
+.productos li:hover h2{/*Esta es una regla de estilo CSS que se aplica a los elementos <h2> dentro de los elementos <li> dentro de cualquier elemento con la clase "productos", cuando el cursor del mouse se posiciona sobre ellos.*/
+    font-size: 33px;/*establece que el tamaño de la fuente dentro de los elementos <h2> cambie a 33px cuando el cursor del mouse se posiciona sobre los elementos <li> que los contienen.*/
+}
+
+.productos-descripcion{
+    font-size: 18px;/*establece que el tamaño de la fuente dentro de los elementos con la clase "productos-descripcion" sea de 18px.*/
+}
+
+.productos-precio{
+    font-size: 20px;/*establece que el tamaño de la fuente dentro de los elementos con la clase "productos-precio" sea de 20px.*/
+    font-weight: bold;/*establece que la fuente dentro de los elementos con la clase "productos-precio" sea en negrita.*/
+    margin-top:10px;/*establece un margen de 10px arriba del elemento con la clase "productos-precio"*/
+}
+
+footer{
+    text-align: center;/*establece que el texto dentro del elemento <footer> se alinee al centro.*/
+    background: url(imagenes/bg.jpg);/*establece una imagen de fondo para el elemento <footer> la cual se encuentra en una carpeta llamada "imagenes" y se llama "bg.jpg".*/
+    padding: 40px;/*establece un padding de 40px alrededor del contenido dentro del elemento <footer>.*/
+}
+
+.copyright{
+    color:#FFFFFF;/*establece que el color del texto dentro de los elementos con la clase "copyright" sea blanco.*/
+    font-size: 13px;/*establece que el tamaño de la fuente dentro de los elementos con la clase "copyright" sea de 13px.*/
+    margin: 20px;/*establece un margen de 20px alrededor de los elementos con la clase "copyright".*/
+}
