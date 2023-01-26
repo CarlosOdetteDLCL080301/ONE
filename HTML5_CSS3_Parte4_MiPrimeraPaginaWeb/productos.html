@@ -1,0 +1,83 @@
+<!DOCTYPE html><!--Definimos el archivo a ejecutar es de HTML-->
+
+<html>
+    <head><!--Definimos el head-->
+        <meta charset="UTF-8"><!--Diccionario a utilizar-->
+        <title>Productos - Barbería Alura</title><!--Titulo de la pestaña-->
+        <link rel="stylesheet" href="reset.css"><!--Referenciamos este CSS para restablecer las configuraciones iniciales del navegador y tener una personalizacion personal-->
+        <link rel = "stylesheet" href="style.css"><!--Referencia al CCS de este html-->
+    </head>
+
+    <body><!--Definimos el body-->
+        <header>
+            <div class="caja"><!--Creamos un bloque para operar nuestro "menu"-->
+                <h1><img src = "imagenes/logo.png"></h1><!--Referenciamos a la imagen, dando la importancia de H1-->
+                <nav>
+                <!--
+
+                    La etiqueta <nav> es un elemento HTML5 que se utiliza para definir una sección de una página web que contiene enlaces de navegación. Los enlaces de navegación son enlaces que llevan a diferentes secciones de la misma página o a otras páginas relacionadas.
+                    La etiqueta <nav> se utiliza para indicar al navegador y a los motores de búsqueda que la sección dentro de ella es importante para la navegación en la página.
+
+                -->
+                    <ul><!--Definimos una lista no ordenada-->
+                        <li><a href="index.html">Home</a></li><!--Definimos los elementos de la lista--> 
+                        <!--
+                            La etiqueta <a> es el elemento HTML para crear un hipervínculo. Los hipervínculos son enlaces que permiten a los usuarios navegar a otras páginas o a otras secciones dentro de la misma página.
+                        -->
+                        <li><a href="productos.html">Productos</a></li><!--Definimos los elementos de la lista-->
+                        <!--
+                            La etiqueta <a> es el elemento HTML para crear un hipervínculo. Los hipervínculos son enlaces que permiten a los usuarios navegar a otras páginas o a otras secciones dentro de la misma página.
+                        -->
+                        <li><a href="contacto.html">Contacto</a></li><!--Definimos los elementos de la lista-->
+                        <!--
+                            La etiqueta <a> es el elemento HTML para crear un hipervínculo. Los hipervínculos son enlaces que permiten a los usuarios navegar a otras páginas o a otras secciones dentro de la misma página.
+                        -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+        <!--
+
+            La etiqueta <main> es un elemento HTML5 que se utiliza para definir el contenido principal de un documento. Es decir, el contenido que es específico de esa página y que se distingue del contenido común a otras páginas como el menú de navegación o el pie de página.
+            El contenido dentro de la etiqueta <main> debe ser único al documento, es decir, no debe aparecer en otras páginas del sitio, salvo excepciones como una página de detalles de un producto.
+            La etiqueta <main> se utiliza para indicar al navegador y a los motores de búsqueda que el contenido dentro de ella es el contenido principal de la página y por lo tanto es importante para el accesibilidad y el SEO. 
+
+        -->
+            <ul class = "productos">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="imagenes/cabello.jpg">
+                    <p class="productos-descripcion">Con tijera o maquina, a gusto del cliente</p>
+                    <p class="productos-precio">$10.00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="imagenes/barba.jpg">
+                    <p class="productos-descripcion">Corte y diseño profesional de barba</p>
+                    <p class="productos-precio">$08.00</p>
+                </li>
+
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="imagenes/cabello+barba.jpg">
+                    <p class="productos-descripcion">Paquete completo de cabello y barba</p>
+                    <p class="productos-precio">$15.00</p>
+                </li>
+            </ul>
+            
+        </main>
+
+        <footer>
+        <!--
+        
+            La etiqueta <footer> es un elemento HTML que se utiliza para definir la sección de una página web que contiene información de pie de página. La información de pie de página suele incluir detalles como el autor de la página, derechos de autor, enlaces a políticas de privacidad y términos de uso, y enlaces a redes sociales.
+            La etiqueta <footer> se coloca al final de la página, justo antes de la etiqueta de cierre </body>.
+        
+        -->
+            <img src = "imagenes/logo-blanco.png">
+            <p class="copyright" >&copy Copyright Barberia Alura - 2023</p><!--Obtenemos el simbolo de Copyright con &copy-->
+        </footer>
+    </body>
+</html>

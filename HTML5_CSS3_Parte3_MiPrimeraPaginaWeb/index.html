@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<!--
+    
+    Es una informacion al navegador del tipo de documento que usará.
+    La etiqueta <!DOCTYPE> es utilizada para indicar al navegador el tipo de documento HTML que se está utilizando. Esta etiqueta debe ser la primera línea en un documento HTML y se utiliza para especificar la versión de HTML que se está utilizando.
+
+-->
+
+<html lang = "es"> 
+<!--
+
+    La etiqueta <html> es el contenedor principal de todo el documento HTML. Todo el contenido de una página web debe estar dentro de estas etiquetas. La etiqueta <html> tiene dos atributos principales, "lang" y "dir" que se utilizan para especificar el idioma y la dirección del texto en el documento respectivamente.
+
+-->
+
+    <head>
+    <!--
+
+         La etiqueta <head> es una de las etiquetas fundamentales que se encuentra dentro de la etiqueta <html> y contiene información sobre el documento que no se muestra en la página, como el título de la página (que se muestra en la pestaña del navegador), los metadatos y enlaces a hojas de estilo CSS.
+
+    -->
+
+        <meta charset="UTF-8">
+        <!--
+
+            La etiqueta <meta> se utiliza para proporcionar metadatos adicionales sobre el documento HTML. Uno de los usos más comunes de la etiqueta <meta> es establecer el juego de caracteres (charset) utilizado en el documento. El atributo "charset" especifica la codificación de caracteres utilizada en el documento.
+
+            La codificación de caracteres UTF-8 es un estándar ampliamente utilizado que permite mostrar caracteres de varios idiomas, incluyendo caracteres especiales y emojis. Establecer la codificación de caracteres en UTF-8 garantiza que los caracteres se muestren correctamente en todos los dispositivos y navegadores.
+
+        -->
+
+        <title>Barbería Alura</title>
+        <!--
+
+            La etiqueta <title> se utiliza para especificar el título de una página web. El texto dentro de esta etiqueta se mostrará en la pestaña del navegador cuando se abra la página y también es utilizado por los motores de búsqueda como el título de la página en los resultados de búsqueda. Es importante que el título sea informativo y refleje el contenido de la página, ya que esto ayuda a los usuarios a identificar de qué trata la página y también puede mejorar el SEO.
+            La etiqueta <title> se coloca dentro de la etiqueta <head> del documento HTML. Es recomendable que el título sea lo suficientemente corto para que pueda mostrarse completo en la pestaña del navegador. Es ademas una buena practica
+
+        -->
+        <link rel = "stylesheet" href="style-home.css">
+        <!--
+
+            La etiqueta <link> se utiliza para vincular una hoja de estilo CSS externa a un documento HTML.
+
+            La etiqueta <link> tiene varios atributos, entre ellos "rel" y "href", que son esenciales para vincular una hoja de estilo. El atributo "rel" especifica el tipo de enlace y en este caso es "stylesheet" que indica que se trata de una hoja de estilos. El atributo "href" especifica la ubicación del archivo CSS al que se está vinculando.
+
+            En este caso, la línea <link rel="stylesheet" href="style.css"> indica que hay una hoja de estilos externa llamada "style.css" que está siendo vinculada al documento HTML, esta hoja de estilo afectará al diseño del documento HTML. El navegador usa esta hoja de estilo para dar formato al contenido HTML y proporcionar un estilo visual a la página.
+
+        -->
+    </head>
+
+    <body>
+    <!--
+
+        La etiqueta <body> también se encuentra dentro de la etiqueta <html> y contiene todo el contenido que se muestra en la página, como texto, imágenes, enlaces y otros elementos multimedia. Es donde se coloca todo el contenido visible de la página. Es ademas una buena practica
+
+    -->
+        <header>
+            <h1 class="titulo-principal">Barbería Alura</h1>
+        <header>
+
+        <img id = "banner" src="banner/banner.jpg">
+        <!--
+
+            La etiqueta <img> se utiliza para insertar imágenes en un documento HTML.
+
+            El atributo "src" es utilizado para especificar la ubicación de la imagen que se desea insertar. En este caso, "banner.jpg" es el nombre del archivo de imagen que se desea insertar. La ruta de acceso a la imagen puede ser relativa o absoluta. Si la ruta es relativa, se refiere a una ubicación en el mismo directorio o en uno subyacente al archivo HTML actual. Si es absoluta, se refiere a una URL completa.
+
+            En este caso, <img src="banner.jpg"> indica que una imagen llamada "banner.jpg" se está insertando en el documento HTML y se está mostrando en la página web.
+
+        -->
+
+        <div class = "principal">
+        <!--
+
+            La etiqueta <div> es una etiqueta de contenedor genérica en HTML, se utiliza para agrupar elementos HTML en un bloque lógico. Los elementos dentro de una etiqueta <div> son tratados como un bloque independiente y se pueden aplicar estilos y atributos de manera individual.
+
+            El atributo "class" se utiliza para asignar un nombre de clase específico al elemento. Los elementos con la misma clase pueden ser seleccionados y estilados de manera conjunta en una hoja de estilos CSS.
+
+            En este caso, <div class="principal"> indica que se está creando un contenedor lógico y se está asignando la clase "diferenciales" al elemento <div> en el documento HTML. La clase "diferenciales" puede ser usada para seleccionar y aplicar estilos específicos a este elemento en una hoja de estilos CSS.
+
+        -->
+            <h2 class="titulo-centralizado">Sobre la Barbería Alura </h2>   
+            <!--
+
+                La etiqueta <h1> es utilizada para definir el encabezado principal en un documento HTML. Es utilizada para indicar el título principal de la página web y se considera el nivel más importante de los encabezados (h1-h6). Los navegadores suelen mostrar el texto dentro de esta etiqueta de forma destacada (por ejemplo, en negrita y de mayor tamaño) para ayudar a los usuarios a identificar rápidamente el tema principal de la página. Es recomendable usar solo una etiqueta h1 en una página ya que es la etiqueta principal.
+                    
+            -->
+
+            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p> 
+            <!-- 
+                La etiqueta <p> se utiliza para definir un párrafo en un documento HTML. El texto dentro de esta etiqueta se mostrará como un párrafo independiente en el navegador.
+    
+                La etiqueta <strong> se utiliza para indicar que el texto dentro de ella debe ser mostrado de forma importante o destacada. Los navegadores suelen mostrar el texto dentro de esta etiqueta en negrita.
+            -->
+    
+            <p id = "mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+            <!--
+    
+                La etiqueta <p> es utilizada para definir un párrafo en un documento HTML. El texto dentro de esta etiqueta se mostrará como un párrafo independiente en el navegador.
+    
+                El atributo "id" se utiliza para especificar un identificador único para un elemento HTML. Una vez que se ha asignado un identificador a un elemento, se puede hacer referencia a él en una hoja de estilos CSS para aplicar estilos específicos a ese elemento. El valor del atributo "id" debe ser único en el documento y no debe comenzar con un número.
+    
+                En este caso, <p id="mision"> indica que el elemento es un párrafo y está siendo asignado un identificador único "mision" que puede ser utilizado para aplicar estilos específicos en una hoja de estilos CSS.
+    
+            -->
+    
+            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+            <!--
+    
+                La etiqueta <p> se utiliza para definir un párrafo en un documento HTML. El texto dentro de esta etiqueta se mostrará como un párrafo independiente en el navegador.
+    
+            -->
+        </div>
+        
+        <div class = "diferenciales">
+        <!--
+
+            La etiqueta <div> es una etiqueta de contenedor genérica en HTML, se utiliza para agrupar elementos HTML en un bloque lógico. Los elementos dentro de una etiqueta <div> son tratados como un bloque independiente y se pueden aplicar estilos y atributos de manera individual.
+
+            El atributo "class" se utiliza para asignar un nombre de clase específico al elemento. Los elementos con la misma clase pueden ser seleccionados y estilados de manera conjunta en una hoja de estilos CSS.
+
+            En este caso, <div class="diferenciales"> indica que se está creando un contenedor lógico y se está asignando la clase "diferenciales" al elemento <div> en el documento HTML. La clase "diferenciales" puede ser usada para seleccionar y aplicar estilos específicos a este elemento en una hoja de estilos CSS.
+
+        -->
+            <h3 class="titulo-centralizado">Diferenciales</h3>
+            <!--
+
+                <h2> es una etiqueta de encabezado en HTML, se utiliza para indicar un título o subtítulo en un documento. Los encabezados HTML van desde <h1> hasta <h6>, siendo <h1> el encabezado más grande y <h6> el más pequeño. Es recomendable usar estos encabezados de manera jerárquica, es decir, usar <h1> para el título principal de la página, <h2> para los títulos de sección, <h3> para los subtítulos, etc.
+
+            -->
+            <ul>
+            <!--
+
+                <ul> es una etiqueta de lista no ordenada en HTML, se utiliza para crear una lista de elementos con viñetas, es decir, elementos que no llevan números o letras para ordenarlos. Dentro de esta etiqueta se colocan los elementos de la lista con la etiqueta <li> (list item).
+
+            -->
+                <li class="items">Atencion personalizada a los clientes</li>
+                <!--
+
+                    <li> es una etiqueta para elementos de lista, se utiliza para indicar cada elemento dentro de una lista, ya sea ordenada o no ordenada. El atributo "class" se utiliza para asignar un nombre de clase específico al elemento,
+
+                -->
+                <li class="items" >Espacio diferenciado</li>
+                <!--
+
+                    <li> es una etiqueta para elementos de lista, se utiliza para indicar cada elemento dentro de una lista, ya sea ordenada o no ordenada. El atributo "class" se utiliza para asignar un nombre de clase específico al elemento,
+
+                -->
+                <li class="items">Localizacion</li>
+                <!--
+
+                    <li> es una etiqueta para elementos de lista, se utiliza para indicar cada elemento dentro de una lista, ya sea ordenada o no ordenada. El atributo "class" se utiliza para asignar un nombre de clase específico al elemento,
+
+                -->
+                <li class="items">Profesionales calificados</li>
+                <!--
+
+                    <li> es una etiqueta para elementos de lista, se utiliza para indicar cada elemento dentro de una lista, ya sea ordenada o no ordenada. El atributo "class" se utiliza para asignar un nombre de clase específico al elemento,
+
+                -->
+            </ul>
+
+            <img src = "diferenciales/diferenciales.jpg" class = "imagenDiferenciales">
+        </div>        
+        
+        
+    </body> 
+</html>

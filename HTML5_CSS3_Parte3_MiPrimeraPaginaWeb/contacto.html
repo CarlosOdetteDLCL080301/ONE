@@ -1,0 +1,191 @@
+<!DOCTYPE html><!--Definimos el archivo a ejecutar es de HTML-->
+
+<html>
+    <head><!--Definimos el head-->
+        <meta charset="UTF-8"><!--Diccionario a utilizar-->
+        <title>Contacto - Barbería Alura</title><!--Titulo de la pestaña-->
+        <link rel="stylesheet" href="reset.css"><!--Referenciamos este CSS para restablecer las configuraciones iniciales del navegador y tener una personalizacion personal-->
+        <link rel = "stylesheet" href="style.css"><!--Referencia al CCS de este html-->
+    </head>
+
+    <body><!--Definimos el body-->
+        <header>
+            <div class="caja"><!--Creamos un bloque para operar nuestro "menu"-->
+                <h1><img src = "imagenes/logo.png" alt="Logo de la Barbería Alura"></h1><!--Referenciamos a la imagen, dando la importancia de H1-->
+                <nav>
+                <!--
+
+                    La etiqueta <nav> es un elemento HTML5 que se utiliza para definir una sección de una página web que contiene enlaces de navegación. Los enlaces de navegación son enlaces que llevan a diferentes secciones de la misma página o a otras páginas relacionadas.
+                    La etiqueta <nav> se utiliza para indicar al navegador y a los motores de búsqueda que la sección dentro de ella es importante para la navegación en la página.
+
+                -->
+                    <ul><!--Definimos una lista no ordenada-->
+                        <li><a href="index.html">Home</a></li><!--Definimos los elementos de la lista--> 
+                        <!--
+                            La etiqueta <a> es el elemento HTML para crear un hipervínculo. Los hipervínculos son enlaces que permiten a los usuarios navegar a otras páginas o a otras secciones dentro de la misma página.
+                        -->
+                        <li><a href="productos.html">Productos</a></li><!--Definimos los elementos de la lista-->
+                        <!--
+                            La etiqueta <a> es el elemento HTML para crear un hipervínculo. Los hipervínculos son enlaces que permiten a los usuarios navegar a otras páginas o a otras secciones dentro de la misma página.
+                        -->
+                        <li><a href="contacto.html">Contacto</a></li><!--Definimos los elementos de la lista-->
+                        <!--
+                            La etiqueta <a> es el elemento HTML para crear un hipervínculo. Los hipervínculos son enlaces que permiten a los usuarios navegar a otras páginas o a otras secciones dentro de la misma página.
+                        -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main> 
+            <form>
+            <!--
+
+                La etiqueta <form> es utilizada para crear un formulario en una página web. Los formularios son utilizados para recolectar información del usuario a través de campos de entrada, como texto, números, selecciones y casillas de verificación. Los datos recolectados a través de un formulario pueden ser enviados al servidor para su procesamiento y almacenamiento mediante el uso de un botón de envío o una acción JavaScript. Los campos dentro del formulario son especificados usando diferentes etiquetas HTML como <input>, <textarea>, <select> y <label> entre otras.
+
+            -->
+                <label for = "nombreapellido">Nombre y Apellido</label>
+                <!--
+
+                    La etiqueta <label> se utiliza para describir el propósito del campo de entrada.
+                    El atributo "for" en la etiqueta de label establece una relación entre la etiqueta de label y el campo de entrada, especificando que el label está asociado con el campo de entrada específico que tiene la ID "nombreapellido".
+
+                -->
+                <input type = "text" id = "nombreapellido" class="input-padron" required placeholder="Apellido_Paterno Apellido_Materno Nombre(s)">
+                <!--
+
+                    La etiqueta <input> es utilizada para crear un campo de entrada en un formulario HTML. El atributo "type" establece el tipo de campo de entrada, en este caso "text", lo que permite al usuario ingresar texto en el campo. El atributo "id" le da un identificador único al campo de entrada, en este caso "nombreapellido", lo que permite a los desarrolladores vincular etiquetas y estilos CSS al campo específico.
+
+                -->
+                <label for = "correoelectronico">Correo Electronico</label>
+                <input type = "email" id = "correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for = "telefono">Telefono</label>
+                <input type = "tel" id = "telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for = "mensaje">Mensaje</label>
+                <textarea cols = "70" rows="10" id = "mensaje" class="input-padron" required></textarea>
+
+                <fieldset>
+                <!--define un conjunto de elementos relacionados en una forma. Se utiliza junto con la etiqueta <legend> para proporcionar una descripción del conjunto de elementos.-->
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    <!--define un título para el conjunto de elementos dentro de un <fieldset>.-->
+                    <label for = "radio-email"><input type = "radio" name = "contacto" value = "email" id = "radio-email">Email</label>
+                    
+                    <label for = "radio-telefono"><input type = "radio" name = "contacto" value = "telefono" id = "radio-telefono">Telefono</label>
+
+                    <label for = "radio-whatsapp"><input type = "radio" name = "contacto" value = "whatsapp" id = "radio-whatsapp" checked>WhatsApp</label>
+                    
+                    <!--
+
+                        La etiqueta <label> se utiliza para asociar un texto descriptivo con un elemento de formulario, como un botón de radio o una casilla de verificación. La etiqueta <label> tiene un atributo "for" que se utiliza para especificar el ID del elemento de formulario al que se asocia. En el ejemplo dado, las etiquetas <label> se utilizan para asociar el texto "Email", "Telefono" y "WhatsApp" con los elementos de formulario de tipo radio.
+
+                        La etiqueta <input> se utiliza para crear un control de entrada en un formulario. En el ejemplo dado, los elementos de tipo radio son utilizados para permitir al usuario seleccionar una opción de contacto. Cada elemento de radio tiene un atributo "name" que se utiliza para agruparlos juntos, de manera que solo se puede seleccionar uno de ellos en un momento. También tiene un atributo "value" que se utiliza para especificar el valor que se enviará al servidor si ese elemento de radio es seleccionado. El atributo "id" es utilizado para identificar cada elemento, y "for" es utilizado para relacionarlo con su etiqueta correspondiente.
+
+                        El atributo "checked" indica que el botón de radio correspondiente esta seleccionado de manera predeterminada.
+
+                        En resumen, el código anterior crea tres botones de radio (Email, Telefono y WhatsApp) que están agrupados bajo el mismo nombre "contacto", y cada uno tiene un valor diferente. Los usuarios pueden seleccionar solo uno de los botones de radio, y el valor seleccionado se enviará al servidor cuando el formulario sea enviado.
+
+                    -->
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>¿En cual horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                <!--
+
+                    La etiqueta <fieldset> se utiliza para agrupar elementos relacionados en un formulario. En este caso, se utiliza para agrupar un elemento de selección (<select>) junto con una descripción de ese elemento (<legend>).
+
+                    La etiqueta <legend> se utiliza para proporcionar un título o descripción para el conjunto de elementos dentro de un <fieldset>. En este caso, la leyenda es "¿En qué horario prefiere ser atendido?".
+
+                    La etiqueta <select> es utilizada para crear un menú desplegable. Dentro de una etiqueta <select>, se utilizan etiquetas <option> para definir las opciones disponibles en el menú desplegable. En este caso, el menú desplegable tiene tres opciones: "Mañana", "Tarde" y "Noche".
+
+                    La etiqueta <option> es utilizada para definir las opciones dentro de un elemento de selección. El valor seleccionado por el usuario se envía al servidor cuando se envía el formulario.
+
+                    En resumen, este código crea un elemento de selección que permite al usuario seleccionar un horario en el cual prefieren ser atendidos, donde las opciones son "Mañana", "Tarde" y "Noche". Todo esta agrupado dentro de un fieldset con una leyenda que describe el conjunto de elementos.
+
+                -->
+
+                <label class="checkbox"><input type = "checkbox" checked>Le gustaría recibir novedades de la Barbería Alura?</label>
+
+                <input type="submit" value = "Enviar Formulario" class = "enviar">
+                <!--
+
+                    La línea de código anterior es una etiqueta <input> que crea un botón de envío para un formulario HTML. El atributo "type" establece el tipo de campo de entrada como "submit", lo que indica que este campo es un botón de envío. El atributo "value" establece el texto que se mostrará en el botón, en este caso "Enviar Formulario". Cuando el usuario hace clic en este botón, los datos del formulario se envían al servidor para su procesamiento.
+
+                -->
+            </form>
+
+            <table>
+            <!--
+            
+                utilizada para crear tablas. Dentro de una tabla, se utilizan etiquetas como <thead>, <tr> y <th> para estructurar el contenido de la tabla.
+            
+            -->
+                <thead>
+                <!--
+                    
+                    Utilizada para definir una sección que contiene los encabezados de columna de una tabla.
+                
+                -->
+                    <tr>
+                    <!--
+                        
+                        utilizada para definir una fila en una tabla.
+                    
+                    -->
+                        <th>Día</th>
+                        <!--
+                            utilizada para definir un encabezado de columna en una tabla. Los encabezados de columna son utilizados para describir el contenido de las columnas. Es comunmente usado dentro de un <thead>
+                                
+                        -->
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+                <!--
+
+                    La etiqueta <tbody> se utiliza para agrupar el cuerpo de una tabla, es decir, las filas de datos. Dentro de una etiqueta <tbody>, se utilizan etiquetas <tr> para definir las filas de una tabla.
+
+                    La etiqueta <tr> se utiliza para definir una fila en una tabla. Dentro de una etiqueta <tr>, se utilizan etiquetas <td> para definir las celdas de una fila.
+
+                    La etiqueta <td> se utiliza para definir una celda en una tabla. El contenido dentro de una etiqueta <td> se mostrará en la celda correspondiente en la tabla.
+
+                    En este caso, el código anterior crea un cuerpo de tabla con tres filas, cada una con dos celdas. La primera celda contiene el día de la semana (Lunes, Miércoles, Viernes) y la segunda celda contiene el horario (08h ~ 20h). Todo esto se visualiza en una tabla con dos columnas, una para el día y otra para el horario de atención.
+
+                -->
+            </table>
+        </main>
+        
+        <footer>
+        <!--
+        
+            La etiqueta <footer> es un elemento HTML que se utiliza para definir la sección de una página web que contiene información de pie de página. La información de pie de página suele incluir detalles como el autor de la página, derechos de autor, enlaces a políticas de privacidad y términos de uso, y enlaces a redes sociales.
+            La etiqueta <footer> se coloca al final de la página, justo antes de la etiqueta de cierre </body>.
+        
+        -->
+            <img src = "imagenes/logo-blanco.png" alt="Logo de la Barbería Alura">
+            <p class="copyright" >&copy Copyright Barberia Alura - 2023</p><!--Obtenemos el simbolo de Copyright con &copy-->
+        </footer>
+    </body>
+</html>

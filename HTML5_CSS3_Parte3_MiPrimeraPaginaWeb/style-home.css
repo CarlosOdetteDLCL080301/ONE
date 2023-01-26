@@ -1,0 +1,143 @@
+body{
+    
+}
+
+p{
+    text-align:center;
+}
+/*
+
+    Este código es una regla CSS que se aplica al elemento HTML "p". La regla establece que el texto dentro de todos los elementos "p" deben estar alineados en el centro.
+
+    La palabra "p" es el selector de esta regla, que indica a qué elementos HTML se aplicará la regla. En este caso, se aplica a todos los elementos "p" en el documento.
+
+    La línea "text-align:center" es una declaración, que establece el valor de la propiedad "text-align" en "center". La propiedad "text-align" es utilizada para especificar la alineación horizontal del texto dentro de un elemento. El valor "center" indica que el texto debe estar centrado dentro del elemento.
+
+*/
+
+.principal{
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+
+.titulo-centralizado{
+    text-align: center;
+    /*
+
+    height: 150px;
+    border: 10px solid #000
+    padding: 20px;
+    margin: 40px;
+    border: 10px solid #000000;
+    padding: 40px;
+
+    */
+}
+
+
+em strong{
+    color:red
+}
+/*
+
+    Este código es una regla CSS que se aplica a los elementos "em" y "strong" que estén anidados entre sí. La regla establece que el color del texto dentro de todos los elementos "em strong" debe ser rojo.
+
+    La palabra "em strong" es el selector de esta regla, que indica a qué elementos HTML se aplicará la regla. En este caso, se aplica a todos los elementos "em" y "strong" que estén anidados entre sí en el documento HTML.
+
+    La línea "color:red" es una declaración, que establece el valor de la propiedad "color" en "red". La propiedad "color" es utilizada para especificar el color del texto dentro de un elemento. El valor "red" indica que el texto debe ser rojo.
+
+*/
+
+#mision{
+    font-size: 20px;
+}
+/*
+
+    Este código es una regla CSS que se aplica al elemento con id "mision" en el documento HTML. La regla establece que el tamaño de fuente del texto dentro del elemento con id "mision" debe ser de 20px.
+
+    El símbolo "#" indica que este es un selector de id, lo que significa que esta regla se aplicará solo al elemento con id específico en el documento HTML.
+
+    La línea "font-size: 20px" es una declaración, que establece el valor de la propiedad "font-size" en "20px". La propiedad "font-size" es utilizada para especificar el tamaño de la fuente del texto dentro de un elemento. El valor "20px" indica que el tamaño de la fuente debe ser de 20 pixels.
+
+*/
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner{
+    width: 100%;
+}
+/*
+
+    Este código es una regla CSS que se aplica al elemento con id "banner" en el documento HTML. La regla establece que el ancho del elemento con id "banner" debe ser del 100% del ancho disponible en el contenedor padre.
+
+    El símbolo "#" antes de "banner" indica que este es un selector de id, lo que significa que esta regla se aplicará solo al elemento con el id específico en el documento HTML.
+
+    La línea "width: 100%" es una declaración, que establece el valor de la propiedad "width" en "100%". La propiedad "width" es utilizada para especificar el ancho de un elemento. El valor "100%" indica que el ancho debe ser del 100% del ancho disponible en el contenedor padre.
+
+*/
+
+.diferenciales{
+    background: #FFFFFF;
+    padding: 20px;
+}
+/*
+
+    Este código es una regla CSS que se aplica al elemento con clase "diferenciales" en el documento HTML. La regla establece que el fondo del elemento con clase "diferenciales" debe ser de color blanco (#FFFFFF) y el padding (espacio interior) debe ser de 20px.
+
+    El punto "." antes de "diferenciales" indica que este es un selector de clase, lo que significa que esta regla se aplicará solo a los elementos con la clase específica en el documento HTML.
+
+    La línea "background: #FFFFFF" es una declaración, que establece el valor de la propiedad "background" en "#FFFFFF". La propiedad "background" es utilizada para especificar el color de fondo de un elemento. El valor "#FFFFFF" indica que el color de fondo debe ser blanco, este valor es un código hexadecimal para indicar un color.
+
+    La línea "padding: 20px" es una declaración, que establece el valor de la propiedad "padding" en "20px". La propiedad "padding" es utilizada para especificar el espacio interior de un elemento. El valor "20px" indica que el espacio interior debe ser de 20 pixels en todos los lados.
+
+*/
+
+
+.items{
+    font-style: italic;
+}
+
+/*
+    Este código es una regla CSS que se aplica al elemento con clase "items" en el documento HTML. La regla establece que el estilo de fuente del texto dentro del elemento con clase "items" debe ser cursiva (italic).
+
+    El punto "." antes de "items" indica que este es un selector de clase, lo que significa que esta regla se aplicará solo a los elementos con la clase específica en el documento HTML.
+
+    La línea "font-style: italic" es una declaración, que establece el valor de la propiedad "font-style" en "italic". La propiedad "font-style" es utilizada para especificar el estilo de la fuente del texto dentro de un elemento. El valor "italic" indica que el estilo de la fuente debe ser cursiva.
+*/
+
+ul{
+    display:inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+/*
+
+    Este código es una regla CSS que se aplica al elemento "ul" en el documento HTML. La regla establece que el display del elemento "ul" debe ser inline-block, el alineamiento vertical debe ser top, el ancho del elemento "ul" debe ser del 20% y el margen derecho debe ser del 15%.
+
+    La palabra "ul" es el selector de esta regla, que indica a qué elementos HTML se aplicará la regla. En este caso se aplica al elemento "ul" del documento HTML.
+
+    La línea "display: inline-block" es una declaración, que establece el valor de la propiedad "display" en "inline-block". La propiedad "display" es utilizada para especificar el tipo de bloque que se utilizará para mostrar el elemento. El valor "inline-block" permite que el elemento se comporte como un bloque en línea, esto significa que el elemento se colocará en la misma línea que los elementos adyacentes, pero se comportará como un bloque independiente.
+
+    La línea "vertical-align: top" es una declaración, que establece el valor de la propiedad "vertical-align" en "top". La propiedad "vertical-align" es utilizada para especificar el alineamiento vertical de un elemento. El valor "top" indica que el elemento "ul" debe estar alineado en la parte superior del contenedor padre.
+
+    La línea "width: 20%" es una declaración, que establece el valor de la propiedad "width" en "20%". La propiedad "width" es utilizada para especificar el ancho de un elemento. El valor "20%" indica que el ancho debe ser del 20% del ancho disponible en el contenedor padre.
+
+    La línea "margin-right: 15%" es una declaración, que establece el valor de la propiedad "margin-right" en "15%". La propiedad "margin-right" es utilizada para especificar el margen derecho de un elemento. El valor "15%" indica que el margen derecho debe ser del 15% del ancho disponible en el contenedor padre.
+
+*/
+.imagenDiferenciales{
+    width: 50%;
+}
+/*
+
+    Esta regla es una regla CSS que se aplica al elemento con clase "imagenDiferenciales" en el documento HTML. La regla establece que el ancho del elemento con clase "imagenDiferenciales" debe ser del 50% del ancho disponible en el contenedor padre.
+
+    El punto "." antes de "imagenDiferenciales" indica que este es un selector de clase, lo que significa que esta regla se aplicará solo a los elementos con la clase específica en el documento HTML.
+
+    La línea "width: 50%" es una declaración, que establece el valor de la propiedad "width" en "50%". La propiedad "width" es utilizada para especificar el ancho de un elemento. El valor "50%" indica que el ancho debe ser del 50% del ancho disponible en el contenedor padre.
+
+*/
